@@ -1,0 +1,135 @@
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
+export default class ExtrasNav extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShow: true,
+        }
+    }
+    showDropdown = (e) => {
+        e.preventDefault();
+        let isShow = this.state.isShow;
+        e.currentTarget.className = isShow ? "subdrop" : "";
+        e.currentTarget.nextElementSibling.style.display = isShow ? "block" : "none";
+        this.setState({ isShow: !isShow });
+    }
+    render() {
+        return (
+            <ul>
+                <li className="menu-title">Extras</li>
+                <li className="submenu" >
+                    <a onClick={this.showDropdown} href="#"><i className="fa fa-columns" aria-hidden="true" /> <span>Pages</span> <span className="menu-arrow" /></a>
+                    <ul className="list-unstyled" style={{ display: 'none' }}>
+                        <li><NavLink activeClassName="active" to="admin/login"> Login </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/register"> Register </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/forgot-password"> Forgot Password </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/change-password2"> Change Password </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/lock-screen"> Lock Screen </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/profile"> Profile </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/gallery"> Gallery </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/pricing">Pricing</NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/error-404">404 Error </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/error-500">500 Error </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/coming-soon">Coming Soon </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/blank-page"> Blank Page </NavLink></li>
+                    </ul>
+                </li>
+                <li className="submenu">
+                    <a onClick={this.showDropdown} href="#" className="noti-dot"><i className="fa fa-rocket" aria-hidden="true" /> <span>CRM </span> <span className="menu-arrow" /></a>
+                    <ul style={{ display: 'none' }}>
+                        <li className="submenu">
+                            <a href="#" className="noti-dot"><span> Employees</span> <span className="menu-arrow" /></a>
+                            <ul className="list-unstyled" style={{ display: 'none' }}>
+                                <li><NavLink activeClassName="active" to="/admin/employees">NavLinkll Employees</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/holidays">Holidays</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/leaves"><span>Leave Requests</span> <span className="badge badge-pill bg-primary float-right">1</span></NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/attendance">Attendance</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/departments">Departments</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/designations">Designations</NavLink></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/clients">Clients</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/projects">Projects</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/tasks">Tasks</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/leads">Leads</NavLink>
+                        </li>
+                        <li className="submenu">
+                            <a onClick={this.showDropdown} href="#"><span> Accounts </span> <span className="menu-arrow" /></a>
+                            <ul className="list-unstyled" style={{ display: 'none' }}>
+                                <li><NavLink activeClassName="active" to="/admin/estimates">Estimates</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/invoices">Invoices</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/payments">Payments</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/expenses">Expenses</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/provident-fund">Provident Fund</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/taxes">Taxes</NavLink></li>
+                            </ul>
+                        </li>
+                        <li className="submenu">
+                            <a onClick={this.showDropdown} href="#"><span> Payroll </span> <span className="menu-arrow" /></a>
+                            <ul className="list-unstyled" style={{ display: 'none' }}>
+                                <li><NavLink activeClassName="active" to="/admin/salary"> Employee Salary </NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/salary-view"> Payslip </NavLink></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/worksheet.html">Timing Sheet</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/assets.html">Assets</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/activities.html">Activities</NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/admin/users.html">Users</NavLink>
+                        </li>
+                        <li className="submenu">
+                            <a onClick={this.showDropdown} href="#"><span> Reports </span> <span className="menu-arrow" /></a>
+                            <ul className="list-unstyled" style={{ display: 'none' }}>
+                                <li><NavLink activeClassName="active" to="/admin/expense-reports.html"> Expense Report </NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/invoice-reports.html"> Invoice Report </NavLink></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li className="submenu">
+                    <a onClick={this.showDropdown} href="#"><i className="fa fa-shopping-cart" aria-hidden="true" /> <span> Ecommerce </span>
+                        <span className="menu-arrow" /></a>
+                    <ul className="list-unstyled" style={{ display: 'none' }}>
+                        <li><NavLink activeClassName="active" to="/admin/products.html"> Products </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/products-list.html"> Products List </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/product-details.html"> Product Details </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/add-product.html"> Add Product </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/edit-product.html"> Edit Product </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/orders.html"> Orders </NavLink></li>
+                    </ul>
+                </li>
+                <li className="submenu">
+                    <a onClick={this.showDropdown} href="#"><i className="fa fa-share-alt" aria-hidden="true" /> <span>Multi
+        Level</span> <span className="menu-arrow" /></a>
+                    <ul style={{ display: 'none' }}>
+                        <li>
+                            <a href="#"><span>Level 1</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Level 2</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Level 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        )
+    }
+}

@@ -19,7 +19,7 @@ export default class Notifications extends Component {
                                     <a href="activities.html">
                                         <div className="media">
                                             <span className="avatar">
-                                                <img alt="John Doe" src="assets/img/user.jpg" className="img-fluid" />
+                                                <img alt="John Doe" src="../assets/img/user.jpg" className="img-fluid" />
                                             </span>
                                             <div className="media-body">
                                                 <p className="noti-details"><span className="noti-title">John Doe</span> added

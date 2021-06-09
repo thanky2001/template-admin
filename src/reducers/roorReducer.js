@@ -1,9 +1,14 @@
 import {combineReducers} from 'redux';
-import showComponents from './reducer/showComponents';
+import infomations from './reducer/infomations';
+import chatsReducer from './reducer/chatsReducer';
+import userReducer from './reducer/userReducer';
+
 
 
 const rootReducer = combineReducers({
-    showComponents
+    infomations,
+    chatsReducer,
+    userReducer
 })
 
 export default rootReducer;

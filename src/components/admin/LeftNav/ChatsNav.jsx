@@ -23,19 +23,19 @@ export default class ChatsNav extends Component {
                 </li>
                 <li className="menu-title">Direct Chats <a href="#" className="add-user-icon" data-toggle="modal" data-target="#add_chat_user"><i className="fa fa-plus" /></a></li>
                 <li>
-                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status online" /></span> John
+                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="../assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status online" /></span> John
       Doe <span className="badge badge-pill bg-danger float-right">1</span></a>
                 </li>
                 <li>
-                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status offline" /></span>
+                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="../assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status offline" /></span>
       Richard Miles <span className="badge badge-pill bg-danger float-right">18</span></a>
                 </li>
                 <li>
-                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status away" /></span> John
+                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="../assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status away" /></span> John
       Smith</a>
                 </li>
                 <li>
-                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status online" /></span> Mike
+                    <a href="chat.html"><span className="chat-avatar-sm user-img"><img src="../assets/img/user.jpg" alt="user" className="rounded-circle" /><span className="status online" /></span> Mike
       Litorus <span className="badge badge-pill bg-danger float-right">108</span></a>
                 </li>
             </ul>

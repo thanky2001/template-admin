@@ -36,11 +36,11 @@ export default class ExtrasNav extends Component {
                         <li><NavLink activeClassName="active" to="/admin/blank-page"> Blank Page </NavLink></li>
                     </ul>
                 </li>
-                <li className="submenu">
-                    <a onClick={this.showDropdown} href="#" className="noti-dot"><i className="fa fa-rocket" aria-hidden="true" /> <span>CRM </span> <span className="menu-arrow" /></a>
+                <li className="submenu noti-dot">
+                    <a onClick={this.showDropdown} href="#"><i className="fa fa-rocket" aria-hidden="true" /> <span>CRM </span> <span className="menu-arrow" /></a>
                     <ul style={{ display: 'none' }}>
-                        <li className="submenu">
-                            <a href="#" className="noti-dot"><span> Employees</span> <span className="menu-arrow" /></a>
+                        <li className="submenu noti-dot">
+                            <a onClick={this.showDropdown} href="#"><span> Employees</span> <span className="menu-arrow" /></a>
                             <ul className="list-unstyled" style={{ display: 'none' }}>
                                 <li><NavLink activeClassName="active" to="/admin/employees">NavLinkll Employees</NavLink></li>
                                 <li><NavLink activeClassName="active" to="/admin/holidays">Holidays</NavLink></li>
@@ -81,22 +81,22 @@ export default class ExtrasNav extends Component {
                             </ul>
                         </li>
                         <li>
-                            <NavLink activeClassName="active" to="/admin/worksheet.html">Timing Sheet</NavLink>
+                            <NavLink activeClassName="active" to="/admin/worksheet">Timing Sheet</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName="active" to="/admin/assets.html">Assets</NavLink>
+                            <NavLink activeClassName="active" to="/admin/assets">Assets</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName="active" to="/admin/activities.html">Activities</NavLink>
+                            <NavLink activeClassName="active" to="/admin/activities">Activities</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName="active" to="/admin/users.html">Users</NavLink>
+                            <NavLink activeClassName="active" to="/admin/users">Users</NavLink>
                         </li>
                         <li className="submenu">
                             <a onClick={this.showDropdown} href="#"><span> Reports </span> <span className="menu-arrow" /></a>
                             <ul className="list-unstyled" style={{ display: 'none' }}>
-                                <li><NavLink activeClassName="active" to="/admin/expense-reports.html"> Expense Report </NavLink></li>
-                                <li><NavLink activeClassName="active" to="/admin/invoice-reports.html"> Invoice Report </NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/expense-reports"> Expense Report </NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/invoice-reports"> Invoice Report </NavLink></li>
                             </ul>
                         </li>
                     </ul>
@@ -105,12 +105,12 @@ export default class ExtrasNav extends Component {
                     <a onClick={this.showDropdown} href="#"><i className="fa fa-shopping-cart" aria-hidden="true" /> <span> Ecommerce </span>
                         <span className="menu-arrow" /></a>
                     <ul className="list-unstyled" style={{ display: 'none' }}>
-                        <li><NavLink activeClassName="active" to="/admin/products.html"> Products </NavLink></li>
-                        <li><NavLink activeClassName="active" to="/admin/products-list.html"> Products List </NavLink></li>
-                        <li><NavLink activeClassName="active" to="/admin/product-details.html"> Product Details </NavLink></li>
-                        <li><NavLink activeClassName="active" to="/admin/add-product.html"> Add Product </NavLink></li>
-                        <li><NavLink activeClassName="active" to="/admin/edit-product.html"> Edit Product </NavLink></li>
-                        <li><NavLink activeClassName="active" to="/admin/orders.html"> Orders </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/products"> Products </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/products-list"> Products List </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/product-details"> Product Details </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/add-product"> Add Product </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/edit-product"> Edit Product </NavLink></li>
+                        <li><NavLink activeClassName="active" to="/admin/orders"> Orders </NavLink></li>
                     </ul>
                 </li>
                 <li className="submenu">

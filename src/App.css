@@ -1,3 +1,16 @@
 .sidebar-overlay {
     top: 45px;
 }
+.config__chart {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donutchart-innertext-label{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.donutchart-innertext-value{
+    font-size: 20px;
+}

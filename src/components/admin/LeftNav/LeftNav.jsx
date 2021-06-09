@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './leftNav.css';
 import SettingsNav from './SettingsNav';
 import DashboardNav from './DashboardNav';
+import { Route } from 'react-router';
 
 
 export default class LeftNav extends Component {

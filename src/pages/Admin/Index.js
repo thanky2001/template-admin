@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import AdminRouter1 from '../../components/admin/AdminRouter/Index';
-import index from '../../components/admin/AdminTemplate/Index';
 import Login from './Login/Login';
 import RightContent from './RightContent';
 import ChangePassword from './Settings/ChangePassword';
@@ -13,7 +12,6 @@ import LeaveType from './Settings/LeaveType';
 import Localization from './Settings/Localization';
 import NotificationSetting from './Settings/NotificationSetting';
 import RolesPermissionsSetting from './Settings/RolesPermissionsSetting';
-import RouteIndex from './Settings/RouteIndex';
 import SalarySetting from './Settings/SalarySetting';
 import ThemeSetting from './Settings/ThemeSetting';
 
@@ -21,8 +19,9 @@ export default class Index extends Component {
     render() {
         return (
             <BrowserRouter>
+                {/* <Route path="/admin"><Redirect to="/admin/login"/></Route> */}
                 <Switch>
-                    <Route path="/admin/login" component={Login} />
+                    <Route path="/admin/login" component={Login}/>
                     {/* <RouteIndex/> */}
                     <AdminRouter1 path="/admin/settings" component={CompanySetting} />
                     <AdminRouter1 path="/admin/localization" component={Localization} />

@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import { Link } from 'react-router-dom';
 
-export default class MessagesList extends Component {
+class MessagesList extends Component {
     render() {
+        let { listUser, currentUser} = this.props;
         return (
             <div className="notification-box">
                 <div className="msg-sidebar notifications msg-noti">
@@ -10,218 +13,34 @@ export default class MessagesList extends Component {
                     </div>
                     <div className="drop-scroll msg-list-scroll">
                         <ul className="list-box">
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">R</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Richard Miles </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item new-message">
-                                        <div className="list-left">
-                                            <span className="avatar">J</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">John Doe</span>
-                                            <span className="message-time">1 Aug</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">T</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Tarah Shropshire </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">M</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Mike Litorus</span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">C</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Catherine Manseau </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">D</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Domenic Houston </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">B</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Buster Wigton </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">R</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Rolland Webber </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">C</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author"> Claire Mapes </span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">M</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Melita Faucher</span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">J</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Jeffery Lalor</span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">L</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Loren Gatlin</span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div className="list-item">
-                                        <div className="list-left">
-                                            <span className="avatar">T</span>
-                                        </div>
-                                        <div className="list-body">
-                                            <span className="message-author">Tarah Shropshire</span>
-                                            <span className="message-time">12:28 AM</span>
-                                            <div className="clearfix" />
-                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            {
+                                listUser && listUser.map((user, index) => {
+                                    if (currentUser.uid!==user.uid) {
+                                        return (
+                                            <li key={index}>
+                                                <a href="#">
+                                                    <div className="list-item">
+                                                        <div className="list-left">
+                                                            <span className="avatar">{user.uName.slice(0, 1)}</span>
+                                                        </div>
+                                                        <div className="list-body">
+                                                            <span className="message-author">{user.uName}</span>
+                                                            <span className="message-time">12:28 AM</span>
+                                                            <div className="clearfix" />
+                                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                            adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        )
+                                    }
+                                })
+                            }
                         </ul>
                     </div>
                     <div className="topnav-dropdown-footer">
-                        <a href="chat.html">See all messages</a>
+                        <Link to="/admin/chat">See all messages</Link>
                     </div>
                 </div>
             </div>
@@ -229,3 +48,10 @@ export default class MessagesList extends Component {
         )
     }
 }
+let mapStateToProps = (state) => {
+    return {
+        listUser: state.userReducer.listUser,
+        currentUser: state.userReducer.currentUser,
+    }
+}
+export default connect(mapStateToProps, null)(MessagesList);

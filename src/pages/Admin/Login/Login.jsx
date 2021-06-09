@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Login extends Component {
     render() {
@@ -9,9 +10,9 @@ export default class Login extends Component {
                     <div className="account-box">
                         <div className="account-wrapper">
                             <div className="account-logo">
-                                <a href="index-2.html"><img src="../assets/img/logo2.png" alt="Preadmin" /></a>
+                                <Link to="/admin"><img src="../assets/img/logo2.png" alt="Preadmin" /></Link>
                             </div>
-                            <form action="/admin">
+                            <form >
                                 <div className="form-group form-focus">
                                     <label className="focus-label">Username or Email</label>
                                     <input className="form-control floating" type="text" />
@@ -21,10 +22,10 @@ export default class Login extends Component {
                                     <input className="form-control floating" type="password" />
                                 </div>
                                 <div className="form-group text-center">
-                                    <button className="btn btn-primary btn-block account-btn" type="submit">Login</button>
+                                    <button className="btn btn-primary btn-block account-btn" >Login</button>
                                 </div>
                                 <div className="text-center">
-                                    <a href="forgot-password.html">Forgot your password?</a>
+                                    <Link to="/admin/forgot-password">Forgot your password?</Link>
                                 </div>
                             </form>
                         </div>

@@ -42,7 +42,7 @@ export default class ExtrasNav extends Component {
                         <li className="submenu noti-dot">
                             <a onClick={this.showDropdown} href="#"><span> Employees</span> <span className="menu-arrow" /></a>
                             <ul className="list-unstyled" style={{ display: 'none' }}>
-                                <li><NavLink activeClassName="active" to="/admin/employees">NavLinkll Employees</NavLink></li>
+                                <li><NavLink activeClassName="active" to="/admin/employees">Employees</NavLink></li>
                                 <li><NavLink activeClassName="active" to="/admin/holidays">Holidays</NavLink></li>
                                 <li><NavLink activeClassName="active" to="/admin/leaves"><span>Leave Requests</span> <span className="badge badge-pill bg-primary float-right">1</span></NavLink></li>
                                 <li><NavLink activeClassName="active" to="/admin/attendance">Attendance</NavLink></li>

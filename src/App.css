@@ -14,3 +14,22 @@
 .donutchart-innertext-value{
     font-size: 20px;
 }
+.m-b-70 {
+    margin-bottom: 70px;
+}
+.select--fix {
+    border-radius: unset !important;
+}
+.select__search{
+    height: 50px;
+    padding: 15px 10px 0 10px;
+}
+.avt h5 a,p{
+    color: #757575;
+    font-size: inherit;
+    font-weight: 600;
+}
+.avt h5 p{
+    font-size: unset !important;
+    font-weight: 400 !important;
+}

@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Redirect, Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import AdminRouter1 from '../../components/admin/AdminRouter/Index';
+import Employees from './Employees/Employees';
+import EmployeesList from './Employees/EmployeesList';
 import Login from './Login/Login';
+import EditProfile from './Profile/EditProfile';
+import Profile from './Profile/Profile';
 import RightContent from './RightContent';
 import ChangePassword from './Settings/ChangePassword';
 import CompanySetting from './Settings/CompanySetting';
@@ -33,6 +37,13 @@ export default class Index extends Component {
                     <AdminRouter1 path="/admin/notifications-settings" component={NotificationSetting} />
                     <AdminRouter1 path="/admin/roles-permissions" component={RolesPermissionsSetting} />
                     <AdminRouter1 path="/admin/leave-type" component={LeaveType} />
+                    {/* employees */}
+                    <AdminRouter1 path="/admin/employees" component={Employees} />
+                    <AdminRouter1 path="/admin/employees-list" component={EmployeesList} />
+                    {/* profile */}
+                    <AdminRouter1 path="/admin/profile" component={Profile}/>
+                    <AdminRouter1 path="/admin/edit-profile" component={EditProfile}/>
+                    {/* dashboard */}
                     <AdminRouter1 path="/admin" component={RightContent} />
                 </Switch>
             </BrowserRouter>

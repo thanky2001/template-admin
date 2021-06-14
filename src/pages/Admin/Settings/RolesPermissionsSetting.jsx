@@ -21,7 +21,7 @@ export default class RolesPermissionsSetting extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="content container-fluid">
                 <CustomModal id={this.state.id} nameMod={this.state.nameMod}>
                     {renderModal(this.state.id)}
                 </CustomModal>

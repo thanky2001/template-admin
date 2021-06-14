@@ -11,9 +11,7 @@ export default class index extends Component {
                 <Header/>
                 <LeftNav />
                 <div className="page-wrapper">
-                    <div className="content container-fluid">
-                        {this.props.children}
-                    </div>
+                    {this.props.children}
                     <MessagesList />
                 </div>
                 <div className="sidebar-overlay" data-reff />

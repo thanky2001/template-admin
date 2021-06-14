@@ -20,7 +20,7 @@ export default class LeaveType extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="content container-fluid">
                 <CustomModal id={this.state.id} nameMod={this.state.nameMod}>
                     {renderModal(this.state.id)}
                 </CustomModal>
@@ -29,7 +29,7 @@ export default class LeaveType extends Component {
                         <h4 className="page-title">Leave Type</h4>
                     </div>
                     <div className="col-sm-4 col-7 text-right m-b-30">
-                        <a data-name="Add Leave Type" href="#" className="btn btn-primary btn-rounded float-right" onClick={this.showModal} data-toggle="modal" data-target="#add_leavetype"><i className="fa fa-plus" /> Add Leave Type</a>
+                        <a data-name="Add Leave Type" className="btn btn-primary btn-rounded float-right" onClick={this.showModal} data-toggle="modal" data-target="#add_leavetype"><i className="fa fa-plus" /> Add Leave Type</a>
                     </div>
                 </div>
                 <div className="row">

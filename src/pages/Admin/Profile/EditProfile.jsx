@@ -6,7 +6,7 @@ class EditProfile extends Component {
     render() {
         let {profile} = this.props;
         return (
-            <div>
+            <div className="content container-fluid">
                 <div className="row">
                     <div className="col-sm-12">
                         <h4 className="page-title">Edit Profile</h4>

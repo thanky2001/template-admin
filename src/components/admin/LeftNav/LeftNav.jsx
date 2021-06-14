@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './leftNav.css';
 import SettingsNav from './SettingsNav';
 import DashboardNav from './DashboardNav';
-import { Route } from 'react-router';
+import ChatsNav from './ChatsNav';
 
 
 export default class LeftNav extends Component {
@@ -20,7 +20,8 @@ export default class LeftNav extends Component {
                 case '/admin/roles-permissions':
                 case '/admin/leave-type':
                     return <SettingsNav/>
-
+                case '/admin/chat':
+                    return <ChatsNav/>
                 default:
                     return <DashboardNav/>
             }

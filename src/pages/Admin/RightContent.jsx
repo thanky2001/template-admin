@@ -17,7 +17,7 @@ import './rightContents.css';
 export default class RightContent extends Component {
     render() {
         return (
-            <div>
+            <div className="content container-fluid">
                 <Witgets/>
                 <BarChart/>
                 <div className="row">

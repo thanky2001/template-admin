@@ -8,6 +8,8 @@ const initialState = {
         firstName: 'Hieu',
         lastName: 'To',
         uName: 'Admin',
+        designation: 'IOS Developer',
+        createDay: '1 Jan 2013',
         birthDate: '05/06/1985',
         gendar: 'male',
         inforContact: {
@@ -31,7 +33,8 @@ const initialState = {
             jobPosition: 'Web Developer',
             periodFrom: '01/07/2007',
             periodTo: '08/06/2018',
-        }
+        },
+        skills:['IOS', 'Android', 'Html', 'CSS', 'Codignitor', 'Php', 'Javascript', 'Wordpress', 'Jquery']
     },
     // ko có currentUser
     listUser: [

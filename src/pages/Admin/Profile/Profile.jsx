@@ -3,7 +3,7 @@ import InforUser from './InforUser';
 export default class Profile extends Component {
     render() {
         return (
-            <div>
+            <div className="content container-fluid">
                 <InforUser />
                 <div className="row">
                     <div className="col-md-3">

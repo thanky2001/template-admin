@@ -131,7 +131,7 @@ class EmployeesList extends Component {
     render() {
         let {listUser} = this.props;
         return (
-            <div>
+            <div className="content container-fluid">
                 <CustomModal id={this.state.id} nameMod={this.state.nameMod}>
                     {renderModal(this.state.id)}
                 </CustomModal>

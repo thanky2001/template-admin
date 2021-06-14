@@ -113,39 +113,6 @@ const initialState ={
             tension: 0.1
         },
     ],
-    tasks: [
-        {
-            id:1,
-            content: 'Patient appointment booking',
-            active: 'inactive',
-        },
-        {
-            id: 2,
-            content: 'Appointment booking with payment gateway',
-            active: 'inactive',
-        },
-        {
-            id: 3,
-            content: 'Doctor available module',
-            active: 'active',
-        },
-        {
-            id: 4,
-            content: 'Patient and Doctor video conferencing',
-            active: 'inactive',
-        },
-        {
-            id: 5,
-            content: 'Private chat module',
-            active: 'inactive',
-        },
-        {
-            id: 6,
-            content: '	Patient Profile add',
-            active: 'inactive',
-        },
-    ]
-
 }
 
 const infomations = (state = initialState, action) => {

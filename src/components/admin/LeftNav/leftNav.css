@@ -8,3 +8,12 @@
 .sidebar-menu ul ul a.active{
     text-decoration: unset;
 }
+.sidebar-inner{
+    height: calc(100vh - 75px) !important;
+}
+.sidebar{
+    height: calc(100vh - 75px) !important;
+}
+.slimScrollDiv{
+    height: calc(100vh - 75px) !important;
+}
